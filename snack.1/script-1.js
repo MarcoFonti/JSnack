@@ -1,5 +1,5 @@
 // Check
-console.log('JS OK SNACK 1')
+console.log('JS OK SNACK 1');
 
 //! SCALETTA
 // 1 Chiediamo 2 numeri all'utente 
@@ -11,18 +11,18 @@ console.log('JS OK SNACK 1')
 const numberOneElement = parseInt(prompt('Dammi un numero', 5));
 const numberTwoElement = parseInt(prompt('Dammi un\'altro numero', 10));
 
-console.log('1° numero: ' + numberOneElement,'2° numero: ' + numberTwoElement)
+console.log('1° numero: ' + numberOneElement,'2° numero: ' + numberTwoElement);
 
 if (isNaN(numberOneElement) || isNaN(numberTwoElement) || numberOneElement < 1 || numberTwoElement < 1){
     alert('Ci sono campi non validi');
 } else {
 
-    let message = 'il Numero piu\' grande è ' 
+    let message = 'Numeri uguali';
 
     if (numberOneElement > numberTwoElement) {
-        message += numberOneElement;
+        message = 'Il Numero piu\' grande è ' + numberOneElement;
     } else if (numberOneElement < numberTwoElement) {
-        message += numberTwoElement;
+        message = 'Il Numero piu\' grande è ' + numberTwoElement;
     }
 
     console.log(message);
