@@ -1,5 +1,5 @@
 // Check
-console.log('JS OK SNACK 3');
+console.log('JS OK SNACK 4');
 
 //! SCALETTA
 // 1 Creiamo un input, button e un paragrafo
