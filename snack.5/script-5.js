@@ -9,16 +9,37 @@ console.log('JS OK SNACK 5');
 // 5 Creiamo un if
 // 6 Stampiamo
 
+
+/* CREO ARRAY VUOTO PER MANIPOLARLO NELLA CONDIZIONE */
 const numberArray = []
 
+
+/* CICLO FOR DA 0 A 6 INCREMENTO DI 1 PER GENERARARE 6 DOMANDE*/
 for (let i = 0; i < 6; i++) {
+
+
+    /* CHIEDO ALL'UTENTE CON IL METODO PROMPT */
     const numberUser = parseInt(prompt('Dimmi un numero'));
+
+
+    /* CONTROLLO RISPOSTA */
     console.log (numberUser);
 
+
+    /* CONDIZIONE SE IL NUMERO DELL'UTENTE NON E' MULTIPLO DI 2 */
     if (!(numberUser % 2 === 0)) {
+
+
+        /* STAMPO A CONSOLE I NUMERI DISPARI */
         console.log('numeri dispari');
-        numberArray.push (numberUser);
+
+
+        /* AGGIUNGO ALL'ARRAY SOLO SE E' DISPARI */
+        numberArray.push(numberUser);
+        
     } 
 }
 
+
+/* CONTROLLO RISPOSTA */
 console.table(numberArray);
